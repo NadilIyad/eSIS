@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7f7d500d-e75a-4371-8048-e879768aee3a" name="Changes" comment="handle ElementNotInteractableException inside schoolEnrollment page">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qpros/dataproviders/StudentWithoutIdData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qpros/dataproviders/StudentWithoutIdData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qpros/pages/StudentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qpros/pages/StudentsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/qpros/utils/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/qpros/utils/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/eSISNumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/eSISNumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/transferDate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/transferDate.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/profiles/stg/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/profiles/stg/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/classes/scenarios/blockbyadek/ReEnrollBlockedByADEKStudentSuperUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/classes/scenarios/blockbyadek/ReEnrollBlockedByADEKStudentSuperUser.java" afterDir="false" />
+    </list>
+    <list id="960810ad-3409-44ee-b282-15ed89de1fbf" name="undoChanges" comment="updateAttachment" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="resetBranch" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2PV6GzFstot6umMM1L6lXHekNku" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/NadilIyad/OneDrive - Quality Professionals/Desktop/ADEK/ADEK/eSISAutomatedTests&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\NadilIyad\OneDrive - Quality Professionals\Desktop\eSISAutomatedTests\src\main\resources\xmlTests\eSIS" />
+      <recent name="C:\Users\NadilIyad\OneDrive - Quality Professionals\Desktop\eSISAutomatedTests\src\main\resources\Reports" />
+      <recent name="C:\Users\NadilIyad\OneDrive - Quality Professionals\Desktop\eSISAutomatedTests\src\main\resources\browserDrivers" />
+      <recent name="C:\Users\NadilIyad\OneDrive - Quality Professionals\Desktop\eSISAutomatedTests\src\main\resources\DataProvider" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\NadilIyad\OneDrive - Quality Professionals\Desktop\eSISAutomatedTests\src\main\resources\xmltasks" />
+      <recent name="C:\Users\NadilIyad\OneDrive - Quality Professionals\Desktop\eSISAutomatedTests\src\main\resources\props" />
+      <recent name="C:\Users\NadilIyad\OneDrive - Quality Professionals\Desktop\eSISAutomatedTests\src\main\resources\images" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utils" />
+      <recent name="com.qpros.utils" />
+      <recent name="eSISTestClasses.Scenarios.StudentJourney" />
+      <recent name="com.qpros.pages.clientCases" />
+      <recent name="com.qpros.common" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="mvn --version" />
+      <command value="mvn clean test -Pstg -Dfile=SchoolJourneyTest.xml" />
+      <command value="mvn stg" />
+      <command value="mvn clean test -Ptest -Dfile=SchoolJourneyTest.xml" />
+      <command value="mvn  clean test -Pstg -Dfile=automationScript.xml" />
+      <command value="mvn clean test -Ptest -Dfile=StudentJourneyTest.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=StudentJourneyTest.xml" />
+      <command value="mvn clean test -Pstg -Dfile=StudentJourneyTest.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=BlockByADEKJourney.xml" />
+      <command value="mvn clean test -Pstg -Dfile=NextYearReservationJourney.xml" />
+      <command value="mvn clean test -Pstg -Dfile=WithdrawStudentJourney.xml" />
+      <command value="mvn clean test -Ptst -Dfile=RetainedStudentJourney.xml" />
+      <command value="mvn clean test -Ptest -Dfile=RetainedStudentJourney.xml" />
+      <command value="mvn clean test -Pstg -Dfile=check.xml" />
+      <command value="mvn clean" />
+      <command value="mvn clean test -Pstg -Dfile=RegistrationTimeFrame.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=WithdrawStudentJourney.xml" />
+      <command value="mvn clean test -Ptest -Dfile=WithdrawStudentJourney.xml -DfailTaskOnFailedTests=false" />
+      <command value="mvn clean test -Ptest -Dfile=WithdrawStudentJourney.xml" />
+      <command value="mvn clean test -Ptest -Dfile=AdmittingStudentJourney.xml" />
+      <command value="mvn clean test -Ptest -Dfile=AutomationScript.xml" />
+      <command value="mvn clean test -Pstg -Dfile=BlockByADEKJourney.xml" />
+      <command value="mvn clean test -Pstg -Dfile=AutomationScript.xml" />
+      <command value="mvn clean test -Pstg -Dfile=AutomationPool.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=AutomationScript.xml" />
+      <command value="mvn clean test -Ptest -Dfile=AutomationPool.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=RandomJourney.xml" />
+      <command value="mvn clean test -Pstg -Dfile=RetainedStudentJourney.xml" />
+      <command value="mvn clean test -Pstg -Dfile=SchoolUserJouurney.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=TransferJourneyTest.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=TransferStudentJourney.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=LocalRun.xml" />
+      <command value="mvn clean test -Pstg -Dfile=TransferStudentJourney.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=AdmittingStudentJourney.xml" />
+      <command value="mvn clean test -Ppreprod -Dfile=SchoolUserJourney.xml" />
+      <command value="mvn clean test -Pstg -Dfile=LocalRun.xml" />
+      <command value="mvn clean test -Pstg -Dfile=AdmittingStudentJourney.xml" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.EnrollRetainStudentKeepRetainCaseSchoolUser">
+    <configuration name="C:/Users/NadilIyad/OneDrive - Quality Professionals/Desktop/eSISAutomatedTests/src/main/resources/xmltasks/BlockByADEKJourney.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QPros" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/xmltasks/BlockByADEKJourney.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/NadilIyad/OneDrive - Quality Professionals/Desktop/eSISAutomatedTests/src/main/resources/xmltasks/SchoolUserJourney.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QPros" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/xmltasks/SchoolUserJourney.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/NadilIyad/OneDrive - Quality Professionals/Desktop/eSISAutomatedTests/src/main/resources/xmltasks/TransferStudentJourney.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QPros" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/xmltasks/TransferStudentJourney.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DeclinedTransferCharterToCharter" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QPros" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.scenarios.transferjourney.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/xmltasks/TransferStudentJourney.xml" />
+      <option name="PACKAGE_NAME" value="classes.scenarios.transferjourney" />
+      <option name="MAIN_CLASS_NAME" value="classes.scenarios.transferjourney.DeclinedTransferCharterToCharter" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnrollRetainStudentKeepRetainCaseSchoolUser" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QPros" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="classes.scenarios.retainedstudentjourney.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/main/resources/xmltasks/SchoolUserJourney.xml" />
+      <option name="PACKAGE_NAME" value="classes.scenarios.retainedstudentjourney" />
+      <option name="MAIN_CLASS_NAME" value="classes.scenarios.retainedstudentjourney.EnrollRetainStudentKeepRetainCaseSchoolUser" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Reports" type="TestNG" nameIsGenerated="true">
+      <module name="QPros" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Reports.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Reports" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.EnrollRetainStudentKeepRetainCaseSchoolUser" />
+        <item itemvalue="TestNG.C:/Users/NadilIyad/OneDrive - Quality Professionals/Desktop/eSISAutomatedTests/src/main/resources/xmltasks/SchoolUserJourney.xml" />
+        <item itemvalue="TestNG.C:/Users/NadilIyad/OneDrive - Quality Professionals/Desktop/eSISAutomatedTests/src/main/resources/xmltasks/BlockByADEKJourney.xml" />
+        <item itemvalue="TestNG.DeclinedTransferCharterToCharter" />
+        <item itemvalue="TestNG.C:/Users/NadilIyad/OneDrive - Quality Professionals/Desktop/eSISAutomatedTests/src/main/resources/xmltasks/TransferStudentJourney.xml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f7d500d-e75a-4371-8048-e879768aee3a" name="Changes" comment="" />
+      <changelist id="960810ad-3409-44ee-b282-15ed89de1fbf" name="undoChanges" comment="" />
+      <created>1683529815502</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683529815502</updated>
+    </task>
+    <task id="LOCAL-00139" summary="change webdrivermanger version to 5.5.3">
+      <created>1697191647006</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1697191647006</updated>
+    </task>
+    <task id="LOCAL-00140" summary="update selenium to 4.13.0">
+      <created>1697196949622</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1697196949622</updated>
+    </task>
+    <task id="LOCAL-00141" summary="editWithdrawDate">
+      <created>1697209934168</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1697209934168</updated>
+    </task>
+    <task id="LOCAL-00142" summary="change maven version to 3.8.1 in pom file">
+      <created>1697450258715</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1697450258715</updated>
+    </task>
+    <task id="LOCAL-00143" summary="edit Lombok version to 1.18.30 and change SDK to 17.0.8">
+      <created>1697453264407</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1697453264407</updated>
+    </task>
+    <task id="LOCAL-00144" summary="add toast message text for PA, to check logs">
+      <created>1697519128796</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1697519128796</updated>
+    </task>
+    <task id="LOCAL-00145" summary="setWithdrawDate">
+      <created>1697605504487</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1697605504487</updated>
+    </task>
+    <task id="LOCAL-00146" summary="remove popup from pending transfer and add the checking popup on preprod">
+      <created>1698042849931</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1698042849931</updated>
+    </task>
+    <task id="LOCAL-00147" summary="update testng to 7.8.0 and selenium to 4.14.1">
+      <created>1698050406683</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1698050406683</updated>
+    </task>
+    <task id="LOCAL-00148" summary="edit attachment files for wait-list stu">
+      <created>1698053500118</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1698053500119</updated>
+    </task>
+    <task id="LOCAL-00149" summary="add pending test cases: 16374, 16373, 15688, 15687, 14532, 13643, 13636">
+      <created>1698176057789</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1698176057790</updated>
+    </task>
+    <task id="LOCAL-00150" summary="edit pending transfer link">
+      <created>1698228519264</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1698228519264</updated>
+    </task>
+    <task id="LOCAL-00151" summary="Approving student  request with Out-Of-Emirate selected">
+      <created>1698238704730</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1698238704730</updated>
+    </task>
+    <task id="LOCAL-00152" summary="[SchoolUser] Grade field is enabled for non-register status and disabled for full-register status">
+      <created>1698298969133</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1698298969134</updated>
+    </task>
+    <task id="LOCAL-00153" summary="[SchoolUser] Grade field is enabled for non-register status and disabled for full-register status">
+      <created>1698301292909</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1698301292910</updated>
+    </task>
+    <task id="LOCAL-00154" summary="Add AssertionError statement for PA">
+      <created>1698302655421</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1698302655421</updated>
+    </task>
+    <task id="LOCAL-00155" summary="Old Record should appear after declined NYR for first time and accept second NYR in another school">
+      <created>1698315565979</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1698315565979</updated>
+    </task>
+    <task id="LOCAL-00156" summary="CR: 16821">
+      <created>1698318501898</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1698318501898</updated>
+    </task>
+    <task id="LOCAL-00157" summary="Old Record should appear after declining NYR for the first time and accepting a second NYR in the another school">
+      <created>1698321192341</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1698321192341</updated>
+    </task>
+    <task id="LOCAL-00158" summary="throw new RunTimeException for PA scenario">
+      <created>1698321554778</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1698321554778</updated>
+    </task>
+    <task id="LOCAL-00159" summary="Check pendingFees mandatory for school/super-users inside charter/private schools">
+      <created>1698401821863</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1698401821864</updated>
+    </task>
+    <task id="LOCAL-00160" summary="Enroll student from enrollment history">
+      <created>1698404570023</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1698404570023</updated>
+    </task>
+    <task id="LOCAL-00161" summary="comment PA class">
+      <created>1698408634199</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1698408634199</updated>
+    </task>
+    <task id="LOCAL-00162" summary="edit TransferStudentFromWaitListTask">
+      <created>1698657312941</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1698657312941</updated>
+    </task>
+    <task id="LOCAL-00163" summary="modified and renamed all packages folders and classes, add weekend class to edit withdraw date steps">
+      <created>1698757807339</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1698757807340</updated>
+    </task>
+    <task id="LOCAL-00164" summary="modify retain case in pending admission and edit tests names">
+      <created>1698840081141</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1698840081142</updated>
+    </task>
+    <task id="LOCAL-00165" summary="add more suites">
+      <created>1698901178049</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1698901178050</updated>
+    </task>
+    <task id="LOCAL-00166" summary="edit package name, add new package, edit weekend class.">
+      <created>1698929039539</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1698929039539</updated>
+    </task>
+    <task id="LOCAL-00167" summary="edit config files">
+      <created>1698946994586</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1698946994586</updated>
+    </task>
+    <task id="LOCAL-00168" summary="modify most old classes">
+      <created>1699253383580</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1699253383580</updated>
+    </task>
+    <task id="LOCAL-00169" summary="reduce the steps">
+      <created>1699601631100</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1699601631100</updated>
+    </task>
+    <task id="LOCAL-00170" summary="reduce the steps">
+      <created>1699611143818</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1699611143819</updated>
+    </task>
+    <task id="LOCAL-00171" summary="enable afterclass">
+      <created>1699611163581</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1699611163581</updated>
+    </task>
+    <task id="LOCAL-00172" summary="commit esis number">
+      <created>1699617445865</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1699617445865</updated>
+    </task>
+    <task id="LOCAL-00173" summary="commit esis number and transfer date">
+      <created>1699866511369</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1699866511369</updated>
+    </task>
+    <task id="LOCAL-00174" summary="edit transfer method for preprod">
+      <created>1699870069748</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1699870069748</updated>
+    </task>
+    <task id="LOCAL-00175" summary="reset branch and change school locator and transfer link">
+      <created>1699966408640</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1699966408640</updated>
+    </task>
+    <task id="LOCAL-00176" summary="edit school locator">
+      <created>1699966484021</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1699966484021</updated>
+    </task>
+    <task id="LOCAL-00177" summary="edit decline locator">
+      <created>1699979023772</created>
+      <option name="number" value="00177" />
+      <option name="presentableId" value="LOCAL-00177" />
+      <option name="project" value="LOCAL" />
+      <updated>1699979023772</updated>
+    </task>
+    <task id="LOCAL-00178" summary="edit esislink method">
+      <created>1700027786526</created>
+      <option name="number" value="00178" />
+      <option name="presentableId" value="LOCAL-00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1700027786526</updated>
+    </task>
+    <task id="LOCAL-00179" summary="edit wide level restriction">
+      <created>1700397256040</created>
+      <option name="number" value="00179" />
+      <option name="presentableId" value="LOCAL-00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1700397256040</updated>
+    </task>
+    <task id="LOCAL-00180" summary="change xmls">
+      <created>1700481197281</created>
+      <option name="number" value="00180" />
+      <option name="presentableId" value="LOCAL-00180" />
+      <option name="project" value="LOCAL" />
+      <updated>1700481197281</updated>
+    </task>
+    <task id="LOCAL-00181" summary="change school name and add notes">
+      <created>1700634000324</created>
+      <option name="number" value="00181" />
+      <option name="presentableId" value="LOCAL-00181" />
+      <option name="project" value="LOCAL" />
+      <updated>1700634000324</updated>
+    </task>
+    <task id="LOCAL-00182" summary="edit decline locators">
+      <created>1700674782875</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1700674782875</updated>
+    </task>
+    <task id="LOCAL-00183" summary="reducing steps,edit switch button">
+      <created>1700743974897</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1700743974897</updated>
+    </task>
+    <task id="LOCAL-00184" summary="reducing steps,edit switch button,">
+      <created>1701073837727</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1701073837728</updated>
+    </task>
+    <task id="LOCAL-00185" summary="delete student file">
+      <created>1701176393552</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1701176393553</updated>
+    </task>
+    <task id="LOCAL-00186" summary="update surefire plugin">
+      <created>1701239847701</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1701239847701</updated>
+    </task>
+    <task id="LOCAL-00187" summary="handle ElementNotInteractableException inside schoolEnrollment page">
+      <created>1701263208436</created>
+      <option name="number" value="00187" />
+      <option name="presentableId" value="LOCAL-00187" />
+      <option name="project" value="LOCAL" />
+      <updated>1701263208436</updated>
+    </task>
+    <option name="localTasksCounter" value="188" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="architecture_setup" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="edit TransferStudentFromWaitListTask" />
+    <MESSAGE value="modified and renamed all packages folders and classes, add weekend class to edit withdraw date steps" />
+    <MESSAGE value="modify retain case in pending admission and edit tests names" />
+    <MESSAGE value="add more suites" />
+    <MESSAGE value="edit package name, add new package, edit weekend class." />
+    <MESSAGE value="edit config files" />
+    <MESSAGE value="modify most old classes" />
+    <MESSAGE value="reduce the steps" />
+    <MESSAGE value="enable afterclass" />
+    <MESSAGE value="commit esis number" />
+    <MESSAGE value="commit esis number and transfer date" />
+    <MESSAGE value="edit transfer method for preprod" />
+    <MESSAGE value="reset branch and change school locator and transfer link" />
+    <MESSAGE value="edit school locator" />
+    <MESSAGE value="edit decline locator" />
+    <MESSAGE value="edit esislink method" />
+    <MESSAGE value="edit wide level restriction" />
+    <MESSAGE value="change xmls" />
+    <MESSAGE value="change school name and add notes" />
+    <MESSAGE value="edit decline locators" />
+    <MESSAGE value="reducing steps,edit switch button" />
+    <MESSAGE value="reducing steps,edit switch button," />
+    <MESSAGE value="delete student file" />
+    <MESSAGE value="update surefire plugin" />
+    <MESSAGE value="handle ElementNotInteractableException inside schoolEnrollment page" />
+    <option name="LAST_COMMIT_MESSAGE" value="handle ElementNotInteractableException inside schoolEnrollment page" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/eSISAutomatedTests$DeclinedTransferCharterToCharter.ic" NAME="DeclinedTransferCharterToCharter Coverage Results" MODIFIED="1686901699176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>eSISTestClasses.Scenarios.TransferJourney.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/eSISAutomatedTests$DropoutStudentEmptyAttachment.ic" NAME="DropoutStudentEmptyAttachment Coverage Results" MODIFIED="1685078778740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>eSISTestClasses.Scenarios.StudentJourney.*</FILTER>
+    </SUITE>
+  </component>
+</project>
